@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+  <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,400italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="cool_styles.css">
+
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="my_js.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <h1 id="topNav">FizzBuzzable</h1>
+  <h2 id="topNavSubHeader">Create and play your own custom game of FizzBuzz!<h2>
+  <h3 id="instructionsHeader" style="font-weight: bolder">Instructions:</h3>
+  <div class="instructions" id="instructionsFade">
+    1. Select a denominator for FIZZ: <input class="fields" type="number" value=1 id="userFizzNum"><br><br>
+    2. Select a denominator for BUZZ:  <input class="fields" type="number" value=1 id="userBuzzNum"><br><br>
+    3. When the game starts, you'll see a number in green.<br><br></div>
+    <div class="instructions" id="instructionKeep">Click <b>FIZZ</b> if the next number is divisible by <a id="userSelectFizz">your fizz number</a>,<b> BUZZ</b> if the next number is divisible by <a id="userSelectBuzz">your buzz number</a>, and <br><b>FIZZBUZZ</b> if the next number is divisible by both.  Otherwise, click the next number!</div>
+  <div id="readyMessage"><center><p style="font-size:50px"><b style="font-family:acme">Are you ready to play?<b></p>
+  <input type="submit" id="playGame" value="Start Your Game!"></div></center>
+  <center><input style="display:none" type="submit" class="confirm" id="reset" value="Reset My Selections"></center><br>
+  <!--Add icons and ids for the game. When clicked, the game will indicate right/wrong and move on to the next counter.-->
+  <center>
+    <hr>
+    <br>
+    <h2 id="currentNumberMessage">The current count is:</h2>
+    <div id="currentNumber">0</div><br>
+    <h2 id="nextNumberMessage">What comes next?</h2>
+    <p id="selectAnswer">Click your answer below:</p>
+    <button type="button" class="icons" id="nextNumberIcon">1</button>
+    <input type="submit" class="icons" id="fizzIcon" value="Fizz">
+    <input type="submit" class="icons" id="buzzIcon" value="Buzz">
+    <input type="submit" class="icons" id="fizzBuzzIcon" value="FizzBuzz">
+  </center>
+  <img class="images" id="soda1" src="http://www.losjalapenos.info/wp-content/uploads/2013/11/soda-pop.png">
+  <img class="images" id="bee1" src="http://www.wba.aplusanywhere.com/R85Content/media/pictures/writing1/bee.png">
+  <!--Need to figure out how to place the variable on a submit button. Might be better to change the inputs to images, actually.-->
+</body>
+</html>
